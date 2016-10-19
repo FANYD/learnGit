@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Git is a good tool haha!
+=======
+Git is a good tool!
+>>>>>>> dev
