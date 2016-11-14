@@ -27,4 +27,13 @@
 9: 当Git无法自动合并分支时，就必须首先解决冲突。解决冲突后，再提交，合并完成。
    用git log --graph命令可以看到分支合并图。
 10: Git分支十分强大，在团队开发中应该充分应用。
-    合并分支时，加上--no-ff参数就可以用普通模式合并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。(git merge --no-ff -m "merge with no-ff" dev)
+    合并分支时，加上--no-ff参数就可以用普通模式并，合并后的历史有分支，能看出来曾经做过合并，而fast forward合并就看不出来曾经做过合并。(git merge --no-ff -m "merge with no-ff" dev)
+11：Git tag就是一个让人容易记住的有意义的名字，它跟某个commit绑在一起。
+    git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+    git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+    git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+    git tag可以查看所有标签。  
+    git push origin <tagname>可以推送一个本地标签；
+    git push origin --tags可以推送全部未推送过的本地标签；
+    git tag -d <tagname>可以删除一个本地标签；
+    git push origin :refs/tags/<tagname>可以删除一个远程标签。
