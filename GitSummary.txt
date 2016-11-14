@@ -37,3 +37,13 @@
     git push origin --tags可以推送全部未推送过的本地标签；
     git tag -d <tagname>可以删除一个本地标签；
     git push origin :refs/tags/<tagname>可以删除一个远程标签。
+12：Git删除远程分支及远程tag http://zengrong.net/post/1746.htm
+    在Git v1.7.0 之后，可以使用这种语法删除远程分支：
+    git push origin --delete <branchName>
+    删除tag这么用：
+    git push origin --delete tag <tagname>
+    否则，可以使用这种语法，推送一个空分支到远程分支，其实就相当于删除远程分支：
+    git push origin :<branchName>  
+    这是删除tag的方法，推送一个空tag到远程tag：
+    git tag -d <tagname>
+    git push origin :refs/tags/<tagname>
