@@ -47,3 +47,8 @@
     这是删除tag的方法，推送一个空tag到远程tag：
     git tag -d <tagname>
     git push origin :refs/tags/<tagname>
+13：Git stash
+	git stash    
+	git stash list
+	git stash apply 恢复后不删除stash
+	git stash pop   恢复后删除stash
