@@ -1,2 +1,2 @@
 # learnGit
-learnGit repository...
+learnGit repository
