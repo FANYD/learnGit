@@ -52,3 +52,7 @@
 	git stash list
 	git stash apply 恢复后不删除stash
 	git stash pop   恢复后删除stash
+14: Git拉取远程标签
+    git tag -l | xargs git tag -d    #delete local tag(s)
+    git fetch origin --prune         #fetch from remote repo
+    git fetch origin --tags          #remote tags are fetched
